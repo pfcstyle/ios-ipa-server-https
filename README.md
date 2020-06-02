@@ -1,19 +1,8 @@
-# ipa-server
 
-Upload and install IPA in web.
+merge [ipa-server](https://github.com/iineva/ipa-server) and [ios-ipa-server](https://github.com/bumaociyuan/ios-ipa-server)，
+thanks for @iineva and @bumaociyuan
 
-* [中文文档](README_zh.md)
-
-# Online Demo
-
-<https://ipa.ineva.cn>
-
-⚠️ Note About This Demo:
-
-* For test only
-* Server is deploy in China
-* Bandwidth only 1Mb/s
-* DO NOT USE THIS ON PRODUCTION
+support https.
 
 # Install
 
@@ -86,7 +75,3 @@ Client side:
 
 Browser open: https://\<YOUR_DOMAIN\>/key.html?key=\<ACCESS_KEY\>
 
-
-Home | Detail |
- --- | ---
-![](snapshot/en/1.jpeg) | ![](snapshot/en/2.jpeg)
