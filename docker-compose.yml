@@ -3,11 +3,14 @@ version: "2"
 services:
   web:
     build: .
-    container_name: ipa-server
+    container_name: ios-ipa-server-https
     restart: always
     environment:
       - NODE_ENV=production
+      - HOST=myelin
+      - PORT=9008
     ports:
-      - "9008:8080"
+      - "9008:9008"
+      - "9009:9009"
     volumes:
       - "/docker/data/ipa-server:/app/upload"

@@ -48,9 +48,7 @@
 <body>
   <div class="download-cert">
     如果出现【无法验证服务器身份】或【无法连接到】，请点击
-    <a href="http://localhost:9009/cer">安装证书</a>。
-    安装完成后，需要手动信任证书：<br>
-    Settings > General > About (logically...) > Certificate Trust Settings > Enable Full Trust for Root Certificates
+    <a class="install-cer">安装证书</a>。
   </div>
   <form>
     <input class="file" type="file" name="file" value="" accept=".ipa" />
@@ -86,6 +84,8 @@
 
     let uploading = false
     window.onbeforeunload = () => uploading ? true : undefined
+    debugger
+    document.querySelector(".install-cer").href = "http://" + window.location.hostname + ":" + (parseInt(window.location.port) + 1) + '/cer'
     document.querySelector(".file").addEventListener("change", e => {
       if (e.target.files.length === 0) {
         return;

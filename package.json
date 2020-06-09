@@ -30,7 +30,8 @@
   },
   "scripts": {
     "start": "nodemon index.js -i public/",
-    "docker-build": "docker build -t ineva/ipa-server .",
+    "docker-build": "docker build -t registry.cn-hangzhou.aliyuncs.com/yawei/ios-ipa-server-https .",
+    "push-docker": "docker push registry.cn-hangzhou.aliyuncs.com/yawei/ios-ipa-server-https:latest",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
